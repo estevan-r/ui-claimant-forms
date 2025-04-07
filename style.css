@@ -47,12 +47,13 @@ body {
 .logo {
   width: 127px;
   height: auto;
+  margin-right: 40px;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: start;
+  margin-top: 24px;
 }
 
 a {
@@ -65,4 +66,8 @@ a {
 
 .small {
   font-size: 0.9rem;
+}
+
+.mr-30 {
+  margin-right: 30px;
 }
