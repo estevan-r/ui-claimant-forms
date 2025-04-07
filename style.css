@@ -8,7 +8,7 @@
   --info-medium-blue: #009ec1;
   --alert-light-red: #f4e3db;
   --alert-medium-red: #d54308;
-  --main-link-color: #2277c1;
+  --main-link-color: #1765b2;
   --footer-text-gray: #a9aeb1;
   --disclaimer-text-gray: #6d6d6d;
   --step-line-gray: #e7e7e7;
@@ -91,6 +91,24 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 8px;
+}
+
+.alert-block {
+  width: 90%;
+  border-left: 8px solid var(--alert-medium-red);
+  background-color: var(--alert-light-red);
+  padding: 8px 10px;
+  font-weight: bold;
+  text-wrap: balance;
+}
+
+.info-block {
+  width: 90%;
+  border-left: 8px solid var(--info-medium-blue);
+  background-color: var(--info-light-blue);
+  padding: 8px 10px;
+  font-weight: bold;
+  text-wrap: balance;
 }
 
 .page-footer {
@@ -184,6 +202,10 @@ li {
   margin-top: 14px;
 }
 
+.mb-6 {
+  margin-bottom: 6px;
+}
+
 .mb-16 {
   margin-bottom: 16px;
 }
@@ -201,5 +223,5 @@ li {
 }
 
 .top-page {
-  margin-top: 60px;
+  margin-top: 36px;
 }
