@@ -1,11 +1,13 @@
 /* COLOR VARIABLES */
 :root {
+  --body-bg-color: #ffffff;
+  --main-content-black: #000000;
   --neutral-light-gray: #f0f0f0;
   --neutral-dark-gray: #3d4551;
   --info-light-blue: #e7f6f8;
   --info-medium-blue: #009ec1;
-  --body-bg-color: #ffffff;
-  --main-content-black: #000000;
+  --alert-light-red: #f4e3db;
+  --alert-medium-red: #d54308;
   --main-link-color: #2277c1;
   --footer-text-gray: #a9aeb1;
   --disclaimer-text-gray: #6d6d6d;
@@ -88,7 +90,7 @@ body {
 
 .list-heading {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
 }
 
@@ -147,12 +149,13 @@ li {
 }
 
 .list-number {
+  flex-basis: 15px;
+  flex-grow: 0;
+  flex-shrink: 0;
   display: grid;
   place-items: center;
   background-color: var(--main-content-black);
   color: var(--body-bg-color);
-  width: 15px;
-  height: 15px;
   border-radius: 50%;
   font-weight: bold;
 }
