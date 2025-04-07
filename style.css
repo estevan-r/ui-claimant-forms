@@ -17,7 +17,7 @@ html {
   font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
   font-size: 10px;
-  line-height: 1.4;
+  line-height: 1.5;
   color: var(--main-content-black);
 }
 * {
@@ -29,6 +29,7 @@ body {
   background-color: var(--neutral-light-gray);
 }
 
+/* Containers and sections */
 .container {
   display: flex;
   flex-direction: column;
@@ -56,18 +57,65 @@ body {
   margin-top: 24px;
 }
 
+.recipient-container {
+  margin-top: 32px;
+}
+
+.recipient-info {
+  display: flex;
+  margin-top: 20px;
+}
+
+.intro {
+  margin-top: 60px;
+  padding-right: 30px;
+}
+
+.content-block {
+  border-left: 8px solid var(--main-content-black);
+  padding: 12px 10px;
+  margin-bottom: 16px;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 a {
   color: var(--main-link-color);
 }
 
-.x-small {
+.text-x-small {
   font-size: 0.8rem;
 }
 
-.small {
+.text-small {
   font-size: 0.9rem;
+}
+
+.text-large {
+  font-size: 1.2rem;
+}
+
+.data-text {
+  color: var(--disclaimer-text-gray);
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .mr-30 {
   margin-right: 30px;
+}
+
+.mr-253 {
+  margin-right: 253px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
 }
