@@ -115,7 +115,6 @@ li {
 
 .intro {
   margin-top: 56px;
-  padding-right: 30px;
 }
 
 .content-block {
@@ -133,6 +132,7 @@ li {
   display: flex;
   align-items: flex-start;
   gap: 8px;
+  text-wrap: balance;
 }
 
 .list-number {
@@ -208,12 +208,20 @@ li {
   margin-bottom: 6px;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .mb-16 {
   margin-bottom: 16px;
 }
 
 .pl-10 {
   padding-left: 10px;
+}
+
+.pr-30 {
+  padding-left: 30px;
 }
 
 .ml-auto {
