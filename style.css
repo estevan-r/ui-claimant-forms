@@ -1,0 +1,25 @@
+/* COLOR VARIABLES */
+:root {
+  --neutral-light-gray: #f0f0f0;
+  --neutral-dark-gray: #3d4551;
+  --info-light-blue: #e7f6f8;
+  --info-medium-blue: #009ec1;
+  --body-bg-color: #ffffff;
+  --main-content-black: #000000;
+  --main-link-color: #2277c1;
+  --footer-text-gray: #a9aeb1;
+  --disclaimer-text-gray: #71767a;
+  --step-line-gray: #dcdee0;
+}
+
+/* BODY INIT */
+body {
+  margin: 0;
+  background-color: var(--body-bg-color);
+  color: var(--main-content-black);
+  font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+}
