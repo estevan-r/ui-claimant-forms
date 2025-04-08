@@ -73,6 +73,14 @@ li {
   font-size: 1.2rem;
 }
 
+.text-XL {
+  font-size: 1.4rem;
+}
+
+.text-2XL {
+  font-size: 1.6rem;
+}
+
 /* CONTAINER AND BLOCKS */
 .pages-container {
   display: flex;
@@ -205,8 +213,24 @@ li {
   margin-bottom: 10px;
 }
 
+.mt-10 {
+  margin-top: 10px;
+}
+
 .mb-16 {
   margin-bottom: 16px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.pt-4 {
+  padding-top: 4px;
+}
+
+.pt-10 {
+  padding-top: 10px;
 }
 
 .pl-10 {
@@ -227,4 +251,9 @@ li {
 
 .top-page {
   margin-top: 36px;
+}
+
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 336px auto;
 }
