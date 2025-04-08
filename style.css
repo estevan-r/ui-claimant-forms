@@ -55,6 +55,7 @@ a {
 }
 
 ul {
+  padding-left: 20px;
   text-wrap: balance;
 }
 
@@ -258,11 +259,17 @@ li {
   margin-top: 24px;
 }
 
-.top-page {
+.mt-36 {
   margin-top: 36px;
+}
+
+.wide-grid {
+  display: grid;
+  grid-template-columns: 336px auto;
 }
 
 .grid-2-col {
   display: grid;
-  grid-template-columns: 336px auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }
