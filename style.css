@@ -69,7 +69,6 @@ li {
 }
 
 label {
-  font-weight: bold;
   text-wrap: balance;
 }
 
@@ -226,6 +225,11 @@ label {
   border-top: 0.5px solid var(--footer-border);
 }
 
+.radio-container {
+  border-top: 0.5px solid var(--footer-border);
+  padding: 10px 0 18px 0;
+}
+
 /* UTILITIES */
 .data-text {
   color: var(--data-text-gray);
@@ -233,6 +237,10 @@ label {
 
 .bold {
   font-weight: bold;
+}
+
+.tracking-tight {
+  letter-spacing: -0.2px;
 }
 
 .mt-14 {
@@ -301,8 +309,20 @@ label {
   grid-template-columns: 150px auto;
 }
 
+.narrow-grid {
+  display: grid;
+  grid-template-columns: 60px auto;
+  padding-left: 22px;
+}
+
 .grid-2-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+}
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
 }

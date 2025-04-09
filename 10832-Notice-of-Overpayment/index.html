@@ -309,7 +309,7 @@
                   name="request-waiver"
                   id="request-waiver"
                 />
-                <label for="request-waiver"
+                <label for="request-waiver" class="bold"
                   >Request a waiver of your overpayment</label
                 >
               </div>
@@ -319,14 +319,14 @@
                   name="request-reconsideration"
                   id="request-reconsideration"
                 />
-                <label for="request-reconsideration">
+                <label for="request-reconsideration" class="bold">
                   Request a reconsideration of a previous waiver decision due to
                   a significant change in your financial circumstances.
                 </label>
               </div>
               <div class="checkbox-container">
                 <input type="checkbox" name="extra-sheets" id="extra-sheets" />
-                <label for="extra-sheets">
+                <label for="extra-sheets" class="bold">
                   Extra sheets attached.
                   <span class="caption">
                     (Write your social security number or claimant ID on each
@@ -342,6 +342,83 @@
           <div class="barcode-placeholder">BARCODE / ID</div>
           <span>Colorado Department of Labor and Employment</span>
           <span class="ml-auto">Page 3 of 6</span>
+        </div>
+      </div>
+      <!-- End of Page Three -->
+
+      <!-- Page Four -->
+      <div id="page-four" class="letter-size">
+        <div class="main-content mt-36">
+          <h2>II. Your Financial Situation</h2>
+          <p>Tell us about your current situation</p>
+          <div id="financial-situation-form" class="mt-16">
+            <!-- Question 1 -->
+            <div class="radio-container">
+              <div class="list-heading mb-10">
+                <div class="list-number">1</div>
+                <h3>Are you currently filing for unemployment benefits?</h3>
+              </div>
+              <div class="narrow-grid">
+                <div class="flex-start">
+                  <input
+                    type="radio"
+                    id="is-currently-filing"
+                    name="currently-filing"
+                    value="true"
+                  />
+                  <label for="is-currently-filing">Yes</label>
+                </div>
+                <div class="flex-start">
+                  <input
+                    type="radio"
+                    id="not-currently-filing"
+                    name="currently-filing"
+                    value="false"
+                  />
+                  <label for="not-currently-filing">No</label>
+                </div>
+              </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="radio-container">
+              <div class="list-heading mb-10">
+                <div class="list-number">2</div>
+                <h3>
+                  Did you file for bankruptcy?
+                  <span class="caption tracking-tight">
+                    (If yes, attach a copy of your paperwork and complete the
+                    information below.)
+                  </span>
+                </h3>
+              </div>
+              <div class="narrow-grid">
+                <div class="flex-start">
+                  <input
+                    type="radio"
+                    id="is-currently-filing"
+                    name="currently-filing"
+                    value="true"
+                  />
+                  <label for="is-currently-filing">Yes</label>
+                </div>
+                <div class="flex-start">
+                  <input
+                    type="radio"
+                    id="not-currently-filing"
+                    name="currently-filing"
+                    value="false"
+                  />
+                  <label for="not-currently-filing">No</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page Footer -->
+        <div class="page-footer text-x-small">
+          <div class="barcode-placeholder">BARCODE / ID</div>
+          <span>Colorado Department of Labor and Employment</span>
+          <span class="ml-auto">Page 4 of 6</span>
         </div>
       </div>
     </div>
