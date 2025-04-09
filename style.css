@@ -230,6 +230,18 @@ label {
   padding: 10px 0 18px 0;
 }
 
+.small-form-grid {
+  display: grid;
+  grid-template-columns: 60px auto;
+  padding-left: 22px;
+}
+
+.mid-form-grid {
+  display: grid;
+  grid-template-columns: 146px auto;
+  padding-left: 22px;
+}
+
 /* UTILITIES */
 .data-text {
   color: var(--data-text-gray);
@@ -309,12 +321,6 @@ label {
   grid-template-columns: 150px auto;
 }
 
-.narrow-grid {
-  display: grid;
-  grid-template-columns: 60px auto;
-  padding-left: 22px;
-}
-
 .grid-2-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -325,4 +331,10 @@ label {
   display: flex;
   align-items: flex-start;
   gap: 6px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
