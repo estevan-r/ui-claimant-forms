@@ -74,6 +74,7 @@ label {
 
 .text-x-small {
   font-size: 0.8rem;
+  line-height: 1.2;
 }
 
 .text-small {
@@ -232,7 +233,7 @@ label {
 
 .small-form-grid {
   display: grid;
-  grid-template-columns: 60px auto;
+  grid-template-columns: 60px 84px auto;
   padding-left: 22px;
 }
 
@@ -325,6 +326,13 @@ label {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+}
+
+.grid-3-col {
+  display: grid;
+  grid-template-columns: 133px 152px auto;
+  gap: 12px;
+  padding-left: 12px;
 }
 
 .flex-start {
