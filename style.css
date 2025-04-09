@@ -286,6 +286,12 @@ input {
   font-weight: bold;
 }
 
+.terms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
 /* UTILITIES */
 .data-text {
   color: var(--data-text-gray);
@@ -427,5 +433,5 @@ input {
 .flex-col {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 }
