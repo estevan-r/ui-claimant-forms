@@ -3,6 +3,7 @@
   --body-bg-color: #ffffff;
   --main-content-black: #000000;
   --neutral-light-gray: #f0f0f0;
+  --neutral-x-light-gray: #f6f6f6;
   --info-light-blue: #e7f6f8;
   --info-medium-blue: #009ec1;
   --alert-light-red: #f4e3db;
@@ -213,7 +214,7 @@ input {
 }
 
 .payment-card {
-  background-color: var(--neutral-light-gray);
+  background-color: var(--neutral-x-light-gray);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
@@ -275,7 +276,7 @@ input {
 }
 
 .input-footer {
-  background-color: var(--neutral-light-gray);
+  background-color: var(--neutral-x-light-gray);
   grid-column: 1 / span 3;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
