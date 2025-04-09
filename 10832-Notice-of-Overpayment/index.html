@@ -420,7 +420,7 @@
                     type="text"
                     id="bankruptcy-num"
                     name="bankruptcy-num"
-                    style="width: 108px; font-size: 10px"
+                    style="width: 108px"
                   />
                 </div>
                 <div class="flex-col">
@@ -431,7 +431,7 @@
                     type="date"
                     id="date-bankruptcy-filed"
                     name="date-bankruptcy-filed"
-                    style="width: 108px; font-size: 10px"
+                    style="width: 108px"
                   />
                 </div>
               </div>
@@ -602,6 +602,189 @@
           <span>Colorado Department of Labor and Employment</span>
           <span class="ml-auto">Page 4 of 6</span>
         </div>
+      </div>
+      <!-- End of Page Four -->
+
+      <!-- Page Five -->
+      <div id="page-five" class="letter-size">
+        <div class="mt-36">
+          <h2>III. Your Financial Statement</h2>
+          <p class="pr-24">
+            Complete the financial statement below. If this statement is
+            incomplete, your waiver request will not be considered. Write N/A
+            for anything that does not apply to you.
+          </p>
+          <div id="income-form" class="form-container mt-24">
+            <h2>Income and Assets</h2>
+            <div class="form-grid mt-36">
+              <!-- Question 1 -->
+              <div class="input-container">
+                <span>1.</span>
+                <div class="input-wrapper">
+                  <label for="number-in-household">
+                    The number of people in your household <br />
+                    &nbsp;
+                  </label>
+                  <input
+                    type="text"
+                    id="number-in-household"
+                    name="number-in-household"
+                  />
+                </div>
+              </div>
+              <!-- Question 2 -->
+              <div class="input-container">
+                <span>2.</span>
+                <div class="input-wrapper">
+                  <label for="unemployed-length">
+                    If you are not working, for how long have you been
+                    unemployed?
+                  </label>
+                  <input
+                    type="text"
+                    id="unemployed-length"
+                    name="unemployed-length"
+                  />
+                </div>
+              </div>
+              <!-- Question 3a -->
+              <div class="input-container">
+                <span>3a.</span>
+                <div class="input-wrapper">
+                  <label for="current-job-length" class="tracking-tighter">
+                    If you are working, for how long have you been working in
+                    your current job?
+                  </label>
+                  <input
+                    type="text"
+                    id="current-job-length"
+                    name="current-job-length"
+                  />
+                </div>
+              </div>
+              <!-- Question 3b -->
+              <div class="input-container">
+                <span>3b.</span>
+                <div class="input-wrapper">
+                  <label for="monthly-wages">
+                    Monthly gross wages
+                    <br />
+                    <span class="caption">(before deductions)</span>
+                  </label>
+                  <input type="text" id="monthly-wages" name="monthly-wages" />
+                </div>
+              </div>
+              <!-- Question 3c -->
+              <div class="input-container">
+                <span>3c.</span>
+                <div class="input-wrapper">
+                  <label for="monthly-take-home">
+                    Monthly take-home pay
+                    <br />
+                    <span class="caption">(after deductions)</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="monthly-take-home"
+                    name="monthly-take-home"
+                  />
+                </div>
+              </div>
+              <!-- Question 4a -->
+              <div class="input-container">
+                <span>4a.</span>
+                <div class="input-wrapper">
+                  <label for="spouse-ssn">
+                    If married, spouse's social security number
+                  </label>
+                  <input type="text" id="spouse-ssn" name="spouse-ssn" />
+                </div>
+              </div>
+              <!-- Question 4b -->
+              <div class="input-container">
+                <span>4b.</span>
+                <div class="input-wrapper">
+                  <label for="spouse-monthly-pay">
+                    Spouse's monthly take-home pay
+                    <span class="caption">(after deductions)</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="spouse-monthly-pay"
+                    name="spouse-monthly-pay"
+                  />
+                </div>
+              </div>
+              <!-- Question 5 -->
+              <div class="input-container">
+                <span>5.</span>
+                <div class="input-wrapper">
+                  <label for="other-income">
+                    Other income <br />
+                    <span class="caption"
+                      >(social security, pension, etc.)</span
+                    >
+                  </label>
+                  <input type="text" id="other-income" name="other-income" />
+                </div>
+              </div>
+              <!-- Question 6 -->
+              <div class="input-container">
+                <span>6.</span>
+                <div class="input-wrapper">
+                  <label for="finance-accounts">
+                    Bank accounts, stocks, and bond
+                  </label>
+                  <input
+                    type="text"
+                    id="finance-accounts"
+                    name="finance-accounts"
+                  />
+                </div>
+              </div>
+              <!-- Question 7 -->
+              <div class="input-container span-3">
+                <span>7.</span>
+                <div class="input-wrapper">
+                  <label for="finance-accounts">
+                    Court ordered child support that you receive <br />
+                    <span class="caption"
+                      >(attach copies of verifying documents)</span
+                    >
+                  </label>
+                  <input
+                    type="text"
+                    id="finance-accounts"
+                    name="finance-accounts"
+                    style="width: 125px"
+                  />
+                </div>
+              </div>
+              <!-- Total -->
+              <div class="input-footer">
+                <label for="total-income-assets">
+                  Total Income and Assets <br />
+                  <span class="text-x-small normal italic tracking-tight"
+                    >(Attach copies of paperwork, if desired)</span
+                  >
+                </label>
+                <div class="w-full pl-18">
+                  <input
+                    type="text"
+                    id="total-income-assets"
+                    name="total-income-assets"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page Footer -->
+      <div class="page-footer text-x-small">
+        <div class="barcode-placeholder">BARCODE / ID</div>
+        <span>Colorado Department of Labor and Employment</span>
+        <span class="ml-auto">Page 5 of 6</span>
       </div>
     </div>
   </body>
