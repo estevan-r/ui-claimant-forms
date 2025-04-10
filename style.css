@@ -73,7 +73,13 @@ label {
 }
 
 input {
+  font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
   font-size: 1rem;
+}
+
+.text-xx-small {
+  font-size: 0.7rem;
+  line-height: 1.2;
 }
 
 .text-x-small {
@@ -411,9 +417,14 @@ input {
 
 .grid-3-col {
   display: grid;
-  grid-template-columns: 133px 152px auto;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: 133px 152px auto; */
   gap: 12px;
   padding-left: 12px;
+}
+
+.grid-3-col > ul {
+  padding-left: 8px;
 }
 
 .span-2 {
