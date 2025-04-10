@@ -997,14 +997,39 @@
           </p>
           <div class="terms-grid mt-10 bold">
             <div class="flex-col">
-              <label for="">Your Signature</label>
-              <div
+              <label for="claimant-signature">Your Signature</label>
+              <!-- Replace this with your singature input solution -->
+              <input
+                type="text"
+                id="claimant-signature"
+                name="claimant-signature"
                 style="
-                  width: 100%;
-                  height: 12px;
-                  border-bottom: 1px solid #e7e7e7;
+                  border: none;
+                  border-bottom: 1px solid black;
+                  width: 126px;
+                  height: 17.75px;
                 "
-              ></div>
+              />
+            </div>
+            <div class="flex-col">
+              <label for="phone-number">
+                Phone Number <span class="caption">(Include area code)</span>
+              </label>
+              <input
+                type="text"
+                id="phone-number"
+                name="phone-number"
+                style="width: 126px"
+              />
+            </div>
+            <div class="flex-col">
+              <label for="date-signed"> Date Signed </label>
+              <input
+                type="date"
+                id="date-signed"
+                name="date-signed"
+                style="width: 126px"
+              />
             </div>
           </div>
         </div>
