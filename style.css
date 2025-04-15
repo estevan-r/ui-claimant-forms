@@ -79,6 +79,12 @@ input {
   font-size: 1rem;
 }
 
+textarea {
+  font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+}
+
 .text-xx-small {
   font-size: 0.7rem;
   line-height: 1.2;
@@ -263,6 +269,13 @@ input {
   padding-left: 22px;
 }
 
+.form-grid-2-col {
+  display: grid;
+  grid-template-columns: repeat(2, 72px);
+  padding-left: 22px;
+  gap: 12px;
+}
+
 .form-container {
   padding: 24px 12px;
   border: 1px solid var(--footer-border);
@@ -319,6 +332,12 @@ input {
   border-top: 1px solid var(--alert-medium-red);
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.hearing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 
 /* TABLE */
@@ -454,6 +473,10 @@ td {
   padding-left: 18px;
 }
 
+.pl-22 {
+  padding-left: 22px;
+}
+
 .pr-24 {
   padding-right: 24px;
 }
@@ -495,6 +518,11 @@ td {
 
 .span-3 {
   grid-column: 1 / span 3;
+}
+
+.row-span-2 {
+  grid-column-start: 2;
+  grid-row: 1 / span 2;
 }
 
 .flex-start {

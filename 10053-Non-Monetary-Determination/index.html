@@ -326,125 +326,118 @@
           <h2 class="italic text-gray">
             Request for Hearing on the Determination
           </h2>
-          <p>Tell us about your current situation</p>
-          <div id="financial-situation-form" class="mt-16">
-            <!-- Question 1 -->
-            <div class="radio-container">
-              <div class="list-heading mb-10">
-                <div class="list-number">1</div>
-                <h3>Are you currently filing for unemployment benefits?</h3>
-              </div>
-              <div class="small-form-grid">
-                <div class="flex-start">
-                  <input
-                    type="radio"
-                    id="is-currently-filing"
-                    name="currently-filing"
-                    value="true"
-                  />
-                  <label for="is-currently-filing">Yes</label>
+          <div id="request-for-hearing-form">
+            <div class="hearing-grid">
+              <!-- Question 1 -->
+              <div class="radio-container">
+                <div class="list-heading mb-10">
+                  <div class="list-number">1</div>
+                  <h3>Who is appealing this decision?</h3>
                 </div>
-                <div class="flex-start">
-                  <input
-                    type="radio"
-                    id="not-currently-filing"
-                    name="currently-filing"
-                    value="false"
-                  />
-                  <label for="not-currently-filing">No</label>
-                </div>
-              </div>
-            </div>
-            <!-- Question 2 -->
-            <div class="radio-container">
-              <div class="list-heading mb-10">
-                <div class="list-number">2</div>
-                <h3>
-                  Did you file for bankruptcy?
-                  <span class="caption tracking-tight">
-                    (If yes, attach a copy of your paperwork and complete the
-                    information below)
-                  </span>
-                </h3>
-              </div>
-              <div class="small-form-grid">
-                <div class="flex-start">
-                  <input
-                    type="radio"
-                    id="filed-bankruptcy"
-                    name="bankruptcy-filing"
-                    value="true"
-                  />
-                  <label for="filed-bankruptcy">Yes</label>
-                </div>
-                <div class="flex-start">
-                  <input
-                    type="radio"
-                    id="not-filed-bankruptcy"
-                    name="bankruptcy-filing"
-                    value="false"
-                  />
-                  <label for="not-filed-bankruptcy">No</label>
+                <div class="form-grid-2-col">
+                  <div class="flex-start">
+                    <input
+                      type="radio"
+                      id="claimant-appealing"
+                      name="appealing-entity"
+                      value="claimant"
+                    />
+                    <label for="claimant-appealing">Claimant</label>
+                  </div>
+                  <div class="flex-start">
+                    <input
+                      type="radio"
+                      id="employer-appealing"
+                      name="appealing-entity"
+                      value="employer"
+                    />
+                    <label for="employer-appealing">Employer</label>
+                  </div>
                 </div>
               </div>
-              <div class="mid-form-grid mt-16">
-                <div class="flex-col">
-                  <label for="bankruptcy-num" class="bold"
-                    >Bankruptcy Number</label
-                  >
-                  <input
-                    type="text"
-                    id="bankruptcy-num"
-                    name="bankruptcy-num"
-                    style="width: 108px"
-                  />
+              <!-- Question 2 -->
+              <div class="radio-container row-span-2">
+                <div class="list-heading mb-10">
+                  <div class="list-number">2</div>
+                  <h3>
+                    Will you be represented at the hearing by a lawyer, union
+                    business agent, or anyone else?
+                  </h3>
                 </div>
-                <div class="flex-col">
-                  <label for="date-bankruptcy-filed" class="bold"
-                    >Date Filed</label
-                  >
-                  <input
-                    type="date"
-                    id="date-bankruptcy-filed"
-                    name="date-bankruptcy-filed"
-                    style="width: 108px"
-                  />
+                <div class="small-form-grid">
+                  <div class="flex-start">
+                    <input
+                      type="radio"
+                      id="yes-represented"
+                      name="has-representation"
+                      value="true"
+                    />
+                    <label for="yes-represented">Yes</label>
+                  </div>
+                  <div class="flex-start">
+                    <input
+                      type="radio"
+                      id="no-represented"
+                      name="has-representation"
+                      value="false"
+                    />
+                    <label for="no-represented">No</label>
+                  </div>
+                </div>
+                <div class="mt-16 pl-22">
+                  <div class="flex-col">
+                    <label for="representative-info" class="italic text-small">
+                      If yes, write the person's name, address, and phone
+                      number:
+                    </label>
+                    <textarea
+                      id="representative-info"
+                      name="representative-info"
+                      maxlength="3000"
+                      rows="4"
+                    ></textarea>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Question 3 -->
-            <div class="radio-container">
-              <div class="list-heading mb-10">
-                <div class="list-number">3</div>
-                <h3>
-                  Did you make a new financial agreement because you are
-                  receiving unemployment benefits? <br />
-                  <em
-                    >For example: leased a car, signed a rental agreement, took
-                    out a personal loan, etc.</em
-                  >
-                </h3>
-              </div>
-              <div class="small-form-grid">
-                <div class="flex-start">
-                  <input
-                    type="radio"
-                    id="has-new-financial-agreement"
-                    name="new-financial-agreement"
-                    value="true"
-                  />
-                  <label for="has-new-financial-agreement">Yes</label>
+              <!-- Question 3 -->
+              <div class="radio-container">
+                <div class="list-heading mb-10">
+                  <div class="list-number">3</div>
+                  <h3>Do you need an interpreter?</h3>
                 </div>
-                <div class="flex-start">
-                  <input
-                    type="radio"
-                    id="no-new-financial-agreement"
-                    name="new-financial-agreement"
-                    value="false"
-                  />
-                  <label for="no-new-financial-agreement">No</label>
+                <div class="small-form-grid">
+                  <div class="flex-start">
+                    <input
+                      type="radio"
+                      id="yes-needs-interpreter"
+                      name="needs-interpreter"
+                      value="true"
+                    />
+                    <label for="yes-needs-interpreter">Yes</label>
+                  </div>
+                  <div class="flex-start">
+                    <input
+                      type="radio"
+                      id="no-needs-interpreter"
+                      name="needs-interpreter"
+                      value="false"
+                    />
+                    <label for="no-needs-interpreter">No</label>
+                  </div>
                 </div>
-                <p class="caption">(If yes, explain)</p>
+                <div class="mid-form-grid mt-16">
+                  <div class="flex-col">
+                    <label for="language-needed" class="italic text-small">
+                      If yes, for what language? You will not be charged for
+                      this service.
+                    </label>
+                    <input
+                      type="text"
+                      id="language-needed"
+                      name="language-needed"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
             <!-- Question 4 -->
@@ -480,94 +473,6 @@
               </div>
             </div>
             <!-- Question 5 -->
-            <div class="radio-container">
-              <div class="list-heading mb-10">
-                <div class="list-number">5</div>
-                <h3>Are you disabled?</h3>
-              </div>
-              <div class="small-form-grid">
-                <div class="flex-start">
-                  <input
-                    type="radio"
-                    id="is-disabled"
-                    name="disabled-claimant"
-                    value="true"
-                  />
-                  <label for="is-disabled">Yes</label>
-                </div>
-                <div class="flex-start">
-                  <input
-                    type="radio"
-                    id="not-disabled"
-                    name="disabled-claimant"
-                    value="false"
-                  />
-                  <label for="not-disabled">No</label>
-                </div>
-                <p class="caption">(If yes, attach copies of your paperwork)</p>
-              </div>
-            </div>
-            <!-- Question 6 -->
-            <div class="radio-container">
-              <div class="list-heading mb-10">
-                <div class="list-number">6</div>
-                <h3>
-                  In the last 12 months, have you received any of the following
-                  public assistance benefits?
-                </h3>
-              </div>
-              <div class="grid-3-col text-x-small mb-16">
-                <ul>
-                  <li>
-                    Federal Supplemental Nutrition Assistance Program Benefits
-                  </li>
-                  <li>Temporary Assistance to Needy Families Benefit (TANF)</li>
-                  <li>Federal Supplemental Security Income (SSI)</li>
-                  <li>Social Security Disability Benefits (SSDI)</li>
-                </ul>
-                <ul>
-                  <li>Means-Tested Legal Aid Services</li>
-                  <li>
-                    Benefits from the Low-Income Energy Assistance Program
-                    Created in Section 26-2-122.5 (LEAP)
-                  </li>
-                  <li>Federal or State Earned Income Tax Credits</li>
-                  <li>Free or Reduced-Priced School Lunch Benefits</li>
-                </ul>
-                <ul>
-                  <li>Public or Subsidizes Housing Benefits</li>
-                  <li>
-                    Medicaid Benefits Under the Medical Assistance Program
-                  </li>
-                  <li>State Medical Assistance</li>
-                  <li>Medicare Benefits</li>
-                </ul>
-              </div>
-              <div class="small-form-grid">
-                <div class="flex-start">
-                  <input
-                    type="radio"
-                    id="is-disabled"
-                    name="disabled-claimant"
-                    value="true"
-                  />
-                  <label for="is-disabled">Yes</label>
-                </div>
-                <div class="flex-start">
-                  <input
-                    type="radio"
-                    id="not-disabled"
-                    name="disabled-claimant"
-                    value="false"
-                  />
-                  <label for="not-disabled">No</label>
-                </div>
-                <p class="caption">
-                  (If yes, explain. Please also circle the benefit(s) in the
-                  list above)
-                </p>
-              </div>
-            </div>
           </div>
         </div>
         <!-- Page Footer -->
