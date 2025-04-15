@@ -384,7 +384,7 @@
                     <label for="no-represented">No</label>
                   </div>
                 </div>
-                <div class="mt-16 pl-22">
+                <div class="mt-10 pl-22">
                   <div class="flex-col">
                     <label for="representative-info" class="italic text-small">
                       If yes, write the person's name, address, and phone
@@ -425,7 +425,7 @@
                     <label for="no-needs-interpreter">No</label>
                   </div>
                 </div>
-                <div class="mid-form-grid mt-16">
+                <div class="mid-form-grid mt-10">
                   <div class="flex-col">
                     <label for="language-needed" class="italic text-small">
                       If yes, for what language? You will not be charged for
@@ -440,46 +440,180 @@
                 </div>
               </div>
             </div>
-            <!-- Question 4 -->
-            <div class="radio-container">
-              <div class="list-heading mb-10">
-                <div class="list-number">4</div>
-                <h3>
-                  Did any agency refuse to help you because you are getting
-                  unemployment benefits? <br />
-                  <em>For example, see agencies listed in question 6 below.</em>
-                </h3>
+            <div class="hearing-grid">
+              <!-- Question 4 -->
+              <div class="radio-container">
+                <div class="list-heading mb-10">
+                  <div class="list-number">4</div>
+                  <h3>
+                    Do you know if anyone else taking part in the appeal needs
+                    an interpreter?
+                  </h3>
+                </div>
+                <div class="small-form-grid">
+                  <div class="flex-start">
+                    <input
+                      type="radio"
+                      id="yes-needs-other-interpreter"
+                      name="needs-other-interpreter"
+                      value="true"
+                    />
+                    <label for="yes-needs-other-interpreter">Yes</label>
+                  </div>
+                  <div class="flex-start">
+                    <input
+                      type="radio"
+                      id="no-needs-other-interpreter"
+                      name="needs-other-interpreter"
+                      value="false"
+                    />
+                    <label for="no-needs-other-interpreter">No</label>
+                  </div>
+                </div>
+                <div class="mid-form-grid mt-10">
+                  <div class="flex-col">
+                    <label
+                      for="other-language-needed"
+                      class="italic text-small"
+                    >
+                      If yes, for what language? You will not be charged for
+                      this service.
+                    </label>
+                    <input
+                      type="text"
+                      id="other-language-needed"
+                      name="other-language-needed"
+                    />
+                  </div>
+                </div>
               </div>
-              <div class="small-form-grid">
-                <div class="flex-start">
-                  <input
-                    type="radio"
-                    id="yes-agency-refused-help"
-                    name="agency-refused-help"
-                    value="true"
-                  />
-                  <label for="yes-agency-refused-help">Yes</label>
+              <!-- Question 5 -->
+              <div class="radio-container">
+                <div class="list-heading mb-10">
+                  <div class="list-number">5</div>
+                  <h3>Has your address changed?</h3>
                 </div>
-                <div class="flex-start">
-                  <input
-                    type="radio"
-                    id="no-agency-refused-help"
-                    name="agency-refused-help"
-                    value="false"
-                  />
-                  <label for="no-agency-refused-help">No</label>
+                <div class="small-form-grid">
+                  <div class="flex-start">
+                    <input
+                      type="radio"
+                      id="yes-address-changed"
+                      name="address-changed"
+                      value="true"
+                    />
+                    <label for="yes-address-changed">Yes</label>
+                  </div>
+                  <div class="flex-start">
+                    <input
+                      type="radio"
+                      id="no-address-changed"
+                      name="address-changed"
+                      value="false"
+                    />
+                    <label for="no-address-changed">No</label>
+                  </div>
                 </div>
-                <p class="caption">(If yes, explain)</p>
+                <div class="mt-10 pl-22">
+                  <div class="flex-col">
+                    <label for="representative-info" class="italic text-small">
+                      If yes, write your new address:
+                    </label>
+                    <textarea
+                      id="representative-info"
+                      name="representative-info"
+                      maxlength="3000"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- Question 5 -->
+            <!-- Question 6 -->
+            <div class="radio-container">
+              <div class="list-heading mb-6">
+                <div class="list-number">6</div>
+                <h3>
+                  <label for="employer-info">
+                    If there is an employer’s name and address on the Notice of
+                    Determination, write the address where you worked if it is
+                    not the same address.
+                  </label>
+                </h3>
+              </div>
+              <div class="pl-22">
+                <textarea
+                  id="employer-info"
+                  name="employer-info"
+                  maxlength="3000"
+                  style="width: 70%"
+                ></textarea>
+              </div>
+            </div>
+            <!-- Question 7 -->
+            <div class="radio-container">
+              <div class="list-heading mb-6">
+                <div class="list-number">7</div>
+                <h3>
+                  <label for="disagreement-reason">
+                    Explain the reasons you disagree with the decision. Provide
+                    as many details as possible. If you do not explain those
+                    reasons here, you may not be allowed to talk about them
+                    during the hearing. You may provide additional sheets of
+                    paper.
+                  </label>
+                </h3>
+              </div>
+              <div class="pl-22">
+                <textarea
+                  id="disagreement-reason"
+                  name="disagreement-reason"
+                  maxlength="3000"
+                  style="width: 90%"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="text-small">
+              The information provided is true, correct, and complete to the
+              best of my knowledge. <br />I understand there are severe
+              penalties, including fines and jail, for not telling the truth.
+            </p>
+            <div class="hearing-grid mt-16 bold">
+              <div class="flex-col">
+                <label for="appealing-signature"
+                  >Signature of the Person Appealing</label
+                >
+                <!-- Replace this with your singature input solution -->
+                <input
+                  type="text"
+                  id="appealing-signature"
+                  name="appealing-signature"
+                  style="
+                    border: none;
+                    border-bottom: 1px solid black;
+                    width: 180px;
+                    height: 17.75px;
+                  "
+                />
+              </div>
+              <div class="flex-col">
+                <label for="date-signed"> Date Signed </label>
+                <input
+                  type="date"
+                  id="date-signed"
+                  name="date-signed"
+                  style="width: 126px"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <!-- Page Footer -->
         <div class="page-footer text-x-small">
           <div class="barcode-placeholder">BARCODE / ID</div>
           <span>Colorado Department of Labor and Employment</span>
-          <span class="ml-auto">Page 4 of 6</span>
+          <span class="ml-auto">Page 4 of 5</span>
         </div>
       </div>
       <!-- End of Page Four -->
