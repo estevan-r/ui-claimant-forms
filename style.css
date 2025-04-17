@@ -44,6 +44,7 @@ h2 {
   font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 12px;
+  text-wrap: balance;
 }
 
 h3 {
@@ -342,6 +343,18 @@ textarea {
   column-gap: 12px;
 }
 
+.branch-card {
+  border-top: 1px solid var(--footer-border);
+  padding-top: 6px;
+  margin-top: 12px;
+}
+
+.appeal-info-grid {
+  display: grid;
+  grid-template-columns: 58% auto;
+  gap: 16px;
+}
+
 /* TABLE */
 
 table {
@@ -473,6 +486,10 @@ td {
 
 .pl-10 {
   padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
 }
 
 .pl-18 {
