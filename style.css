@@ -61,7 +61,8 @@ a {
   font-weight: bold;
 }
 
-ul {
+ul,
+ol {
   padding-left: 20px;
   text-wrap: balance;
 }
@@ -392,6 +393,10 @@ td {
 
 .tracking-tighter {
   letter-spacing: -0.3px;
+}
+
+.balance {
+  text-wrap: balance;
 }
 
 .w-full {
