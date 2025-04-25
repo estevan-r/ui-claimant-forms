@@ -32,5 +32,5 @@
 ## Work in Progress
 
 - [ ] 10053--Non-Monetary Determination--Spanish
-- [ ] 10921--Claim Submission Confirmation
-- [ ] 10921--Claim Submission Confirmation--Spanish
+- [ ] 10921--Notice of Claimant Submission
+- [ ] 10921--Notice of Claimant Submission--Spanish
