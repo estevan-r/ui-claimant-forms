@@ -7,6 +7,12 @@
 - All styles are set to accomodate a letter-sized document.
 - Comments are set to identify each section per form (HTML) and style groups in (CSS).
 
+### April 29, 2025
+
+- 10921 | Notice of Claimant Submission (English) completed
+- 10053 | Non-Monetary Determination (Spanish) completed
+- Two new styles added for the Spanish version (10053)
+
 ### April 17, 2025
 
 - 10053 | Non-Monetary Determination (English) completed
@@ -28,9 +34,9 @@
 - [x] 10832--Notice of Overpayments
 - [x] 10832--Notice of Overpayments--Spanish
 - [x] 10053--Non-Monetary Determination
+- [x] 10053--Non-Monetary Determination--Spanish
+- [x] 10921--Notice of Claimant Submission
 
 ## Work in Progress
 
-- [ ] 10053--Non-Monetary Determination--Spanish
-- [ ] 10921--Notice of Claimant Submission
 - [ ] 10921--Notice of Claimant Submission--Spanish
