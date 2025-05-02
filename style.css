@@ -530,6 +530,12 @@ td {
   grid-template-columns: 150px auto;
 }
 
+.uneven-2-col-grid {
+  display: grid;
+  grid-template-columns: 45% auto;
+  gap: 16px;
+}
+
 .grid-2-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
