@@ -7,6 +7,11 @@
 - All styles are set to accomodate a letter-sized document.
 - Comments are set to identify each section per form (HTML) and style groups in (CSS).
 
+### May 2, 2025
+
+- 10921 | Notice of Claimant Submission (Spanish) completed
+- Added new class for uneven grid to fit Spanish content on page 3
+
 ### April 29, 2025
 
 - 10921 | Notice of Claimant Submission (English) completed
@@ -36,7 +41,4 @@
 - [x] 10053--Non-Monetary Determination
 - [x] 10053--Non-Monetary Determination--Spanish
 - [x] 10921--Notice of Claimant Submission
-
-## Work in Progress
-
-- [ ] 10921--Notice of Claimant Submission--Spanish
+- [x] 10921--Notice of Claimant Submission--Spanish
